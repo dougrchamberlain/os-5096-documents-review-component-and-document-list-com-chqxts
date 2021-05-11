@@ -1,0 +1,16 @@
+<span mat-title>click to expand / collapse </span>
+<mat-accordion *ngFor="let groups of documents | groupBy:'FileTypeDescription'">
+  <mat-expansion-panel expanded="true" (afterCollapse)="typeCollapsed(groups.key)"
+    (afterExpand)="typeExpanded(groups.key)">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div mat-hint>{{groups.key}}</div>
+      </mat-panel-title>
+
+    </mat-expansion-panel-header>
+    <mat-nav-list fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+      <a mat-button *ngFor="let doc of groups.value" (click)="onDocumentClick(doc)">
+        {{doc.Description}} {{doc.SubTypeDescription}}</a>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>

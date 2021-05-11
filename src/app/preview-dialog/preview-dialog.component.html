@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-content>
+    <ngx-doc-viewer *ngIf="document.PDFUrl" [url]="document.PDFUrl" style="width:50vw;height:70vh;"></ngx-doc-viewer>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="whenMarkedReviewed(document)">
+      Mark Review Complete
+    </button>
+  </mat-card-actions>
+</mat-card>
