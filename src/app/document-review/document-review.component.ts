@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PatientDocument } from './interfaces/patient-document';
+import { PatientDocument } from '../interfaces/patient-document';
 
 @Component({
   selector: 'document-review',

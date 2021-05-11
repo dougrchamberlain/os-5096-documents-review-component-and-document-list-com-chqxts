@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { PatientDocument } from './interfaces/patient-document';
+import { PatientDocument } from '../interfaces/patient-document';
 
 @Component({
   selector: 'app-preview-dialog',
