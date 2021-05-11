@@ -11,7 +11,7 @@ import { PatientDocument } from '../interfaces/patient-document';
  *
  */
 @Injectable()
-export class DocumentsService extends ObservableStore<StoreState> {
+export class PatientDocumentsService extends ObservableStore<StoreState> {
   documentApiPath: string = 'https://ennpxdfurcc291d.m.pipedream.net';
   constructor(private client: HttpClient) {
     super({ trackStateHistory: true });

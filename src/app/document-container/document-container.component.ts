@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PatientDocumentsService } from '../documents-service/documents-api.service';
 import { PatientDocument } from '../interfaces/patient-document';
 
 /**
@@ -15,8 +14,6 @@ export class DocumentContainerComponent implements OnInit {
   log: any;
   documents: PatientDocument[];
 
-  constructor(private service: PatientDocumentsService) {}
-  ngOnInit(): void {
-    this.service;
-  }
+  constructor() {}
+  ngOnInit(): void {}
 }
