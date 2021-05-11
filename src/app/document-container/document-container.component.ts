@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { PatientDocumentsService } from '../documents-service/documents-api.service';
+import { PatientDocumentsService } from '../documents-api.service';
 import { PatientDocument } from '../interfaces/patient-document';
 
 /**
