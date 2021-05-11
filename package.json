@@ -32,7 +32,6 @@
     "moment": "2.29.1",
     "ngx-doc-viewer": "2.0.2",
     "rxjs": "^6.5.0",
-    "saucectl": "0.40.2",
     "tslib": "2.2.0",
     "zone.js": "0.11.4"
   },
