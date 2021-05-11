@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PatientDocumentsService } from '../documents-api.service';
-import { PatientDocument } from '../interfaces/patient-document';
 
 /**
  * @title List with expandable panels for each file type
@@ -13,7 +12,7 @@ import { PatientDocument } from '../interfaces/patient-document';
 export class DocumentContainerComponent implements OnInit {
   results$: any;
   log: any;
-  documents: PatientDocument[];
+  documents: any[];
 
   constructor(private store: PatientDocumentsService) {}
   ngOnInit(): void {
