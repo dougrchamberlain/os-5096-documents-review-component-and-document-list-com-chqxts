@@ -1,7 +1,7 @@
+import { Observable, of } from 'rxjs/dist/types';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ObservableStore } from '@codewithdan/observable-store';
-import { Observable, of } from 'rxjs/dist/types';
 import { PatientDocument } from '../interfaces/patient-document';
 
 /**
