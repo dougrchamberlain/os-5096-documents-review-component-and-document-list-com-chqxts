@@ -23,7 +23,7 @@
     "@angular/platform-browser": "11.2.13",
     "@angular/platform-browser-dynamic": "11.2.13",
     "@angular/router": "11.2.13",
-    "@codewithdan/observable-store": "2.2.11",
+    "@codewithdan/observable-store": "^2.0.0",
     "@microsoft/applicationinsights-web": "2.6.2",
     "angular-annotorious": "1.0.7",
     "angular-image-annotator": "0.0.10",
@@ -31,7 +31,8 @@
     "jmespath": "0.15.0",
     "moment": "2.29.1",
     "ngx-doc-viewer": "2.0.2",
-    "rxjs": "^6.5.0",
+    "rxjs": "^6.0.0",
+    "saucectl": "0.40.2",
     "tslib": "2.2.0",
     "zone.js": "0.11.4"
   },
