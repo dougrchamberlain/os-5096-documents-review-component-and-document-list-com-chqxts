@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PatientDocumentsService } from '../documents-service/documents-api.service';
 import { PatientDocument } from '../interfaces/patient-document';
 
 /**
@@ -14,6 +16,15 @@ export class DocumentContainerComponent implements OnInit {
   log: any;
   documents: PatientDocument[];
 
-  constructor() {}
-  ngOnInit(): void {}
+  constructor(private store: PatientDocumentsService) {}
+  ngOnInit(): void {
+    this.store.get(1).subscribe({
+      next: data => {
+        this.documents = data;
+      },
+      error: e => {
+        console.log(e);
+      }
+    });
+  }
 }
